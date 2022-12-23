@@ -1,0 +1,19 @@
+.content {
+  max-width: 1600px;
+  margin: auto;
+  padding: 10px 30px 40px;
+  background: #fff;
+}
+
+.breadcrumb {
+  padding-top: 20px;
+  padding-bottom: 0;
+
+  i {
+    margin-right: 4px;
+  }
+
+  .separation {
+    margin: 0 5px;
+  }
+}

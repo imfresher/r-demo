@@ -1,0 +1,59 @@
+/**
+ * Common
+ */
+a {
+  * {
+    pointer-events: none;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading {
+  color: $heading-color;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.dropdown-toggle {
+  &.arrow-none {
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.component-section {
+  padding: 30px 0;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.icon__text {
+  display: flex;
+  align-items: center;
+
+  i {
+    margin-right: 3px;
+  }
+}

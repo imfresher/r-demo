@@ -1,0 +1,141 @@
+.app__header {
+  > .container,
+  > .container-fluid {
+    > .row {
+      height: 100%;
+    }
+  }
+
+  .topbar__menu {
+    > li {
+      float: left;
+      max-height: $header-height;
+    }
+
+    .nav__link {
+      padding: 0;
+      color: #98a6ad;
+      min-width: 32px;
+      text-align: center;
+      margin: 0 10px;
+      position: relative;
+      justify-items: center;
+      align-items: center;
+      display: flex;
+    }
+
+    .dropdown-toggle {
+      &:after {
+        margin-left: 0.6em;
+      }
+    }
+  }
+
+  .topbar__dropdown {
+    > .nav__link {
+      line-height: $header-height;
+    }
+  }
+}
+
+.nav__user {
+  padding: calc(28px * .5) 20px calc(28px * .5) 30px!important;
+  text-align: left!important;
+  position: relative;
+  border-width: 0 1px;
+  height: 60px;
+
+  .account__user__avatar {
+    margin-right: 8px;
+
+    img {
+      height: 38px;
+      width: 38px;
+    }
+  }
+
+  .account__user__name {
+    display: block;
+    font-weight: 600;
+  }
+
+  .account__position {
+    display: block;
+    font-size: 12px;
+    margin-top: -3px;
+  }
+}
+
+.mobile__menu__btn {
+  background: none;
+  border: 0;
+  font-size: 1.8rem;
+  line-height: $header-height;
+  padding: 0 10px;
+}
+
+.header {
+  &__left,
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+
+  &__actions {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+
+    &__item {
+      > a {
+        display: flex;
+        align-items: center;
+        margin-right: 16px;
+        padding: 3px;
+
+        img,
+        svg {
+          height: 16px;
+        }
+      }
+
+      i {
+        font-size: 1.1rem;
+      }
+
+      &.action__notification {
+        i {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+.action__account {
+  margin-left: 15px;
+
+  &__title {
+    display: flex;
+    align-items: center;
+
+    &.dropdown-toggle::after {
+      display: none;
+    }
+  }
+
+  &__img {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 100%;
+    border: 1px solid $gray-600;
+    padding: 1px;
+
+    img {
+      width: 40px;
+      border-radius: 100%;
+    }
+  }
+}
